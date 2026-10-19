@@ -6,12 +6,16 @@ namespace revisao
 {
     internal class Igormacedo
     {
-        public int id { get; set; }
+        public int Idade { get; set; }
 
-        public string nome { get; set; }
+        public string Nome { get; set; }
 
-        public decimal preco { get; set; }
+        public string Sexo { get; set; }
 
-        public int quantidade { get; set; }
+        public int NumeroCel { get; set; }
+
+        public int CPF { get; set; }
+
+        public string Email { get; set; }
     }
 }
