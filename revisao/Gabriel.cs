@@ -10,7 +10,9 @@ namespace revisao
         List<string> status;
 
         // Informações básicas
+        public string Nome { get; set; }
         public int Idade { get; set; }
+        public string raca { get; set; }
         public double Dinheiro { get; set; }
         public string Descricao { get; set; }
 
