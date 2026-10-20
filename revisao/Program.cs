@@ -9,15 +9,15 @@ class Program
         pessoa.Idade = 17;
         pessoa.Nome = "Igor";
         pessoa.Sexo = "Masculino";
-        pessoa.NumeroCel = 31972432641;
-        pessoa.CPF = 16134687685;
+        pessoa.NumeroCel = "31972432641";
+        pessoa.CPF = "16134687685";
         pessoa.Email = "igormacedosilveira5522@gmail.com";
 
-        Cosole.WriteLine($"Idade: {pessoa.Idade}");
-        Cosole.WriteLine($"Nome: {pessoa.Nome}");
-        Cosole.WriteLine($"Sexo: {pessoa.Sexo}");
-        Cosole.WriteLine($"Numero de Celular: {pessoa.NumeroCel}");
-        Cosole.WriteLine($"CPF: {pessoa.CPF}");
-        Cosole.WriteLine($"Email: {pessoa.Email}");
+        Console.WriteLine($"Idade: {pessoa.Idade}");
+        Console.WriteLine($"Nome: {pessoa.Nome}");
+        Console.WriteLine($"Sexo: {pessoa.Sexo}");
+        Console.WriteLine($"Numero de Celular: {pessoa.NumeroCel}");
+        Console.WriteLine($"CPF: {pessoa.CPF}");
+        Console.WriteLine($"Email: {pessoa.Email}");
     }
 }
