@@ -1,10 +1,9 @@
 ﻿using revisao;
 
 //igor
-static void Main(string[] args)
-{
+
     Igormacedo pessoa = new Igormacedo();
-    {
+    
 
         pessoa.Idade = 17;
         pessoa.Nome = "Igor";
@@ -20,8 +19,7 @@ static void Main(string[] args)
         Console.WriteLine($"CPF: {pessoa.CPF}");
         Console.WriteLine($"Email: {pessoa.Email}");
 
-    }
-}
+    
 
 
 
