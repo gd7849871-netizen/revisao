@@ -9,7 +9,7 @@ namespace revisao
 
     using System;
 
-    public static class
+    public static class PersonagemService
     {
         public static List<personagem> BancoDados = new List<personagem>();
         public static void Adicionar()
@@ -19,11 +19,11 @@ namespace revisao
             Console.WriteLine("Usuário digite seu nome");
             personagem.Nome = Console.ReadLine();
             Console.WriteLine("Digite sua idade");
-            personagem.Idade = int.Parse(Console.ReadLine());
+            personagem.Idade = Console.ReadLine();
             Console.WriteLine("raca");
             personagem.raca = Console.ReadLine();
            Console.WriteLine("Digite a quantidade de dinheiro");
-            personagem.Dinheiro = double.Parse(Console.ReadLine());
+            personagem.Dinheiro = Console.ReadLine();
             Console.WriteLine("Digite a descrição do personagem");
             personagem.Descricao = Console.ReadLine();
             Console.WriteLine("Digite a força do personagem");
@@ -52,7 +52,7 @@ namespace revisao
         }
         public static void ListarProvas()
         {
-            foreach (Prova item in BancoDados)
+            foreach (personagem item in BancoDados)
             {
                 item.ExibirDados();
             }

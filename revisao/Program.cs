@@ -1,4 +1,5 @@
 ﻿    using revisao;  
+
 using System;
 using System.Collections.Generic;
 
@@ -31,9 +32,9 @@ Igormacedo pessoa = new Igormacedo();
 
     Status.id = 1;
     Status.Nome = "Gabriel";
-    Status.Idade = 16;
+    Status.Idade = "16";
     Status.raca = "Elfo";
-    Status.Dinheiro = 10000.0;
+    Status.Dinheiro = "10000";
     Status.Descricao = "jovem guerreiro elfo da tribo dos ventos, com habilidades de combate corpo a corpo, magia e arco, nascido no reino clover com um diferencial de n possuir a habilidade essencial de controle da agonia queé  elento fundamental do controle de mana onde esse reino magia é TUDO , e ele deseja acabar com a discriminação com os fracos e raça carregando com um coisa em mente, A sua magia É n desistir jamais";
     Status  .Forca = 23;
     Status.Inteligencia = 20;
@@ -46,25 +47,4 @@ Igormacedo pessoa = new Igormacedo();
     Status.determinacao = 100;
     Status.HP = 200;
 
-
-
-int opcao = 0;
-while (opcao != -1)
-{
-    Console.WriteLine("Digite a operação que deseja realizar:");
-    Console.WriteLine("1-  Adicionar");
-    Console.WriteLine("2- Listar");
-    opcao = int.Parse(Console.ReadLine());
-    if (opcao == 1)
-    {
-        personagemService.Adicionar();
-    }
-    else if (opcao == 2)
-    {
-        personagemService.ListarPersonagens();
-    }
-    else
-    {
-        opcao = -1;
-    }
-}
+Status.ExibirDados();
